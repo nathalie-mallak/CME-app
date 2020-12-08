@@ -1,0 +1,33 @@
+*
+{
+	font-family: Comfortaa, cursive;
+	color: unset;
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+	outline: none;
+}
+
+.linkDiv
+{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 20%;
+	margin: 0px auto;
+}
+
+.link 
+{
+    color: white;
+    font-size: 17px;
+    padding-right: 20px
+}
+
+.link:hover
+{
+	color: rgb(231, 165, 176);
+	transform: scale(1.05);
+	cursor: pointer;
+	text-decoration: none;
+}
