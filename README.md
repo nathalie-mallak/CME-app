@@ -1,3 +1,9 @@
+How to use the downloaded files:
+
+1) Run "npm install" in the extracted folder
+2) Install the Chrome Redux DevTools Extension (or you will get an error "Cannot read property 'apply' of undefined")
+3) Run "npm start" to view the project
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
