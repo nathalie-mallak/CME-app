@@ -6,11 +6,11 @@ const VideoList = ({videos , handleVideoSelect}) => {
 
     const classes = useStyles()
 
-    const getVideos =  videos.map((video) => {
+    const getVideos =  videos.map((video, id) => {
 
         return  <Paper className={classes.paper}>
                     <VideoItem 
-                        key={video.id.videoId} 
+                        key={id} 
                         video={video} 
                         handleVideoSelect={handleVideoSelect} 
                     />
@@ -34,5 +34,6 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: '30px',
       textAlign: 'center',
       color: theme.palette.text.secondary,
+      cursor: 'pointer'
     },
   }));

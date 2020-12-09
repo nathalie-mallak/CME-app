@@ -4,7 +4,7 @@ import Search from '../search/search'
 import youtube from '../../apis/youtube'
 import VideoList from '../videoList'
 import VideoDetails from '../videoDetails'
-import { Grid, makeStyles } from '@material-ui/core'
+import { Grid } from '@material-ui/core'
 import './page1.css'
 
 const Page1 = () => {
@@ -37,30 +37,18 @@ const Page1 = () => {
             <Search searchVideo={searchVideo} />
 
             <div className='gridDiv'>
-            <Grid container spacing={8}>
-                <Grid item xs={12} sm={6}>
-                    <VideoList handleVideoSelect={handleVideoSelect} videos={videos} />
-                </Grid>
+                <Grid container spacing={8}>
+                    <Grid item xs={12} sm={6}>
+                        <VideoList handleVideoSelect={handleVideoSelect} videos={videos} />
+                    </Grid>
 
-                <Grid item xs={12} sm={6}>
-                    <VideoDetails videoId={selectedVideo} />
+                    <Grid item xs={12} sm={6}>
+                        <VideoDetails videoId={selectedVideo} />
+                    </Grid>
                 </Grid>
-            </Grid>
             </div>
         </>
     )
 }
 
 export default Page1
-
-const useStyles = makeStyles((theme) => ({
-    root: {
-      flexGrow: 1,
-    },
-    paper: {
-      padding: theme.spacing(2),
-      marginBottom: '30px',
-      textAlign: 'center',
-      color: theme.palette.text.secondary,
-    },
-  }));

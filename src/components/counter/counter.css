@@ -1,0 +1,27 @@
+.mainDiv
+{
+    margin: 15% 0%;
+}
+
+.buttons
+{
+    background-color: gray;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #BF5E66;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.result 
+{
+    border-radius: 50%;
+    background-color: #BF5E66;
+    border: 1px solid gray;
+    width: 200px;
+    text-align: center;
+    font-size: 35px;
+    padding: 60px 0px;
+    color: white
+}

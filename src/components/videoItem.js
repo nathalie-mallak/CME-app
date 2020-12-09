@@ -8,6 +8,7 @@ const VideoItem = ({video , handleVideoSelect}) => {
 
             <div>
                 {video.snippet.title}
+                <br />
                 {video.snippet.description}
             </div>
         </div>
